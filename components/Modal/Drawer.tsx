@@ -92,7 +92,7 @@ const DrawerModal: React.ForwardRefRenderFunction<ModalHandle, Props> = (
                 <div className="-mt-5 -mx-5 md:-mx-10 h-[calc(100vh-78px)] overflow-y-auto">
                     <div className="sticky top-0 bg-[#f7f1f1] dark:bg-ebayDark z-10">
                         <div className="flex justify-between items-center px-5 md:px-10 pt-5">
-                            <h1 className="text-2xl font-semibold text-pink-500">
+                            <h1 className="text-2xl font-semibold text-purple-500">
                                 {headerText}
                             </h1>
                             <div className="p-1 rounded-md active:ring-2 active:ring-gray-700 hover:bg-gray-300 transition-colors duration-200 inline-flex cursor-pointer">
@@ -112,7 +112,7 @@ const DrawerModal: React.ForwardRefRenderFunction<ModalHandle, Props> = (
                 <div className="sticky left-0 bottom-0 border-t w-[calc(100%+40px)] md:w-[calc(100%+80px)] -mx-5 md:-mx-10 px-5 md:px-10 py-4 flex justify-end space-x-5 bg-white dark:bg-ebayDark">
                     <button
                         onClick={closeModal}
-                        className="outline-none px-5 font-medium border-2 border-pink-500 py-2 rounded-md text-pink-500 bg-transparent hover:bg-pink-500 hover:text-white transition-colors duration-200"
+                        className="outline-none px-5 font-medium border-2 border-purple-500 py-2 rounded-md text-purple-500 bg-transparent hover:bg-purple-500 hover:text-white transition-colors duration-200"
                     >
                         Cancel
                     </button>
@@ -120,7 +120,7 @@ const DrawerModal: React.ForwardRefRenderFunction<ModalHandle, Props> = (
                         onClick={() => {
                             onSuccessClick?.();
                         }}
-                        className="outline-none px-5 font-medium border-2 border-pink-500 py-2 rounded-md text-white bg-pink-500 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-pink-600 transition-colors duration-200"
+                        className="outline-none px-5 font-medium border-2 border-purple-500 py-2 rounded-md text-white bg-purple-500 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-purple-600 transition-colors duration-200"
                         disabled={isLoading}
                     >
                         {successBtnText || "Add"}
