@@ -105,7 +105,7 @@ function Header({}: Props) {
                         <Link href="/">
                             <Image
                                 className="h-full w-full object-contain position"
-                                src="/logo.png"
+                                src="/nk_icon.png"
                                 width={100}
                                 height={100}
                                 alt="logo"

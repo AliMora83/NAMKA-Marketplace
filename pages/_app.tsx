@@ -15,15 +15,15 @@ function MyApp({ Component, pageProps }: AppProps) {
             <ThemeProvider enableSystem={true} attribute="class">
                 <Head>
                     {/* <title>Alien Peace Marketplace</title>
-                    <link rel="icon" href="/favicon.ico" /> */}
+                    <link rel="icon" href="/nk_icon.png" /> */}
 
-                    <title>Alien Peace Marketplace</title>
-                    <meta name="title" content="Alien Peace Marketplace" />
+                    <title>NAMKA Web3 Marketplace</title>
+                    <meta name="title" content="NAMKA Web3 Marketplace" />
                     <meta
                         name="description"
-                        content="All Alien NFT in one place - ALIEN PEACE"
+                        content="New NFT Marketplace"
                     />
-                    <link rel="icon" type="image/png" href="/favicon.ico" />
+                    <link rel="icon" type="image/png" href="/nk_icon.png" />
                     <meta property="og:type" content="website" />
                     <meta
                         property="og:url"
@@ -31,11 +31,11 @@ function MyApp({ Component, pageProps }: AppProps) {
                     />
                     <meta
                         property="og:title"
-                        content="Alien Peace Marketplace"
+                        content="NAMKA Web3 Marketplace"
                     />
                     <meta
                         property="og:description"
-                        content="All Alien NFT in one place - ALIEN PEACE"
+                        content="New NFT Marketplace"
                     />
                     <meta
                         property="og:image"
@@ -55,11 +55,11 @@ function MyApp({ Component, pageProps }: AppProps) {
                     />
                     <meta
                         property="twitter:title"
-                        content="Alien Peace Marketplace"
+                        content="NAMKA Web3 Marketplace"
                     />
                     <meta
                         property="twitter:description"
-                        content="All Alien NFT in one place - ALIEN PEACE"
+                        content="New NFT Marketplace"
                     />
                     <meta
                         property="twitter:image"
