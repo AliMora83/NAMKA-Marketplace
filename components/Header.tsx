@@ -113,12 +113,12 @@ function Header({}: Props) {
                         </Link>
                     </div>
 
-                    <button className="hidden lg:flex items-center space-x-2 w-20">
+                    {/* <button className="hidden lg:flex items-center space-x-2 w-20">
                         <p className="text-gray-600 dark:text-white/50 text-sm">
                             Shop by Category
                         </p>
                         <HiOutlineChevronDown className="flex-shrink-0 text-sm" />
-                    </button>
+                    </button> */}
 
                     <form className="flex items-center flex-1">
                         <label htmlFor="voice-search" className="sr-only">

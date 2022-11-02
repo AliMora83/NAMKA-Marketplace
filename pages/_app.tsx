@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     <meta property="og:type" content="website" />
                     <meta
                         property="og:url"
-                        content="https://ebay-clone-challenge.vercel.app/"
+                        content="https://nk-marketplace.vercel.app/"
                     />
                     <meta
                         property="og:title"
@@ -51,7 +51,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     />
                     <meta
                         property="twitter:url"
-                        content="https://ebay-clone-challenge.vercel.app/"
+                        content="https://nk-marketplace.vercel.app/"
                     />
                     <meta
                         property="twitter:title"
@@ -63,7 +63,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     />
                     <meta
                         property="twitter:image"
-                        content="https://ebay-clone-challenge.vercel.app/assets/site_preview.jpg"
+                        content="https://ebay-clone-challenge.vercel.app/assets/site_preview.png"
                     />
                 </Head>
                 <Component {...pageProps} />
