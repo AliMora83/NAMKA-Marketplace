@@ -19,7 +19,7 @@ import Countdown from "react-countdown";
 import { RaceBy, Ring } from "@uiball/loaders";
 import toast from "react-hot-toast";
 
-import { ButtonNeon, Header, ListingCard } from "../../components";
+import { ButtonNeon, Footer, Header, ListingCard } from "../../components";
 import network from "../../utils/network";
 import useColorTheme from "../../utils/useColorTheme";
 import { ethers } from "ethers";
@@ -462,6 +462,7 @@ function ListingPage({}: Props) {
                     </section>
                 </main>
             )}
+            <Footer/>
         </div>
     );
 }

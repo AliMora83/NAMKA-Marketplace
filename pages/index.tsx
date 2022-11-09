@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 
 import { ListingType } from "@thirdweb-dev/sdk";
 import Link from "next/link";
-import { Header, ListingCard, NftSkeleton } from "../components";
+import { Footer, Header, ListingCard, NftSkeleton } from "../components";
 import useListItem from "../utils/hooks/useListItem";
 
 const Home: NextPage = () => {
@@ -99,6 +99,7 @@ const Home: NextPage = () => {
                         </div>
                     )}
                 </main>
+                <Footer/>
             </div>
         </>
     );
