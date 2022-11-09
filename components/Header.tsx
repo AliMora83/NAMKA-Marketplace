@@ -69,14 +69,12 @@ function Header({}: Props) {
                             />
                         </ButtonNeon>
 
-                        <p className="headerLink">Daily Deals</p>
                         <p className="headerLink">Help & Contact</p>
                     </div>
 
                     <ThemeToggler />
 
                     <div className="flex items-center space-x-4 text-sm">
-                        <p className="headerLink">Ship to</p>
                         <p className="headerLink">Sell</p>
                         <p className="headerLink">Watchlist</p>
 
@@ -92,9 +90,6 @@ function Header({}: Props) {
                                 <HiOutlinePlus className="text-base font-bold" />
                             </div>
                         </div>
-
-                        <HiOutlineBell className="text-2xl cursor-pointer hover:scale-125 transition" />
-                        <HiOutlineShoppingCart className="text-2xl cursor-pointer hover:scale-125 transition" />
                     </div>
                 </nav>
 

@@ -81,7 +81,7 @@ function ListItem({
                                             className="h-36 rounded-lg"
                                             src={nft.metadata.image}
                                         />
-                                        <p className="truncate pt-2 text-base font-md text-[#e0aa53]">
+                                        <p className="truncate pt-2 text-base font-md text-[#080a0b]">
                                             {nft.metadata.name}
                                         </p>
                                         <p className="truncate text-xs text-gray-400 dark-text-white">

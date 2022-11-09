@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
     return (
         <>
-            <div className="to-gray-500[0.35] dark:to-gray-500[0.25] bg-gradient-to-tr from-gray-500/[0.35] dark:from-purple-500/[0.15] min-h-screen pb-20 md:pb-10">
+            <div className="bg-gradient-to-tr from-gray-400/[0.50] to-gray-200[0.35]  dark:from-[#080a0b] dark:to-gray-500/[0.1] min-h-screen pb-20 md:pb-10">
                 <Header />
 
                 <main className="max-w-6xl mx-auto p-2">
@@ -38,17 +38,17 @@ const Home: NextPage = () => {
                                         <div className="flex flex-col p-5 space-y-5">
                                             <div className="flex-1 flex flex-col pb-2 items-center">
                                                 <MediaRenderer
-                                                    className="w-44"
+                                                    className="w-44 rounded-lg"
                                                     src={listing.asset.image}
                                                 />
                                             </div>
 
                                             <div className="pt-2 space-y-4">
-                                                <h2 className="text-lg truncate text-gray-500 font-bold">
+                                                <h2 className="text-md truncate text-gray-500 font-bold">
                                                     {listing.asset.name}
                                                 </h2>
-                                                <hr />
-                                                <p className="truncate text-sm text-gray-600 dark:text-white/60">
+                                                <hr className="border-[#caa969]"/>
+                                                <p className="truncate text-xs text-gray-600 dark:text-white/60">
                                                     {listing.asset.description}
                                                 </p>
                                             </div>

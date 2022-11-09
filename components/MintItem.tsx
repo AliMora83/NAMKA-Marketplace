@@ -88,7 +88,7 @@ function MintItem({
                         name="name"
                         onChange={(e) => setName(e.target.value)}
                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-pink-500 dark:focus:border-pink-500"
-                        placeholder="Sonny"
+                        placeholder="Name of your item..."
                         value={name}
                         required
                     />
@@ -105,15 +105,15 @@ function MintItem({
                         id="description"
                         name="description"
                         onChange={(e) => setDescription(e.target.value)}
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-pink-500 dark:focus:border-pink-500"
-                        placeholder="Sangha"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e0aa53] focus:border-[#e0aa53] block w-full p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#e0aa53] dark:focus:border-[#e0aa53]"
+                        placeholder="Description of your item..."
                         value={description}
                         required
                     />
                 </div>
             </form>
 
-            <p className="text-xs flex space-x-1 items-center text-pink-600/80">
+            <p className="text-xs flex space-x-1 items-center text-[#e0aa53]">
                 <InformationCircleIcon
                     cursor={"pointer"}
                     title="By add ing an item to the marketplace, you're

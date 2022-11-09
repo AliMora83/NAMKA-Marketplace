@@ -92,7 +92,7 @@ const DrawerModal: React.ForwardRefRenderFunction<ModalHandle, Props> = (
                 <div className="-mt-5 -mx-5 md:-mx-10 h-[calc(100vh-78px)] overflow-y-auto">
                     <div className="sticky top-0 bg-[#fff] dark:bg-ebayDark z-10">
                         <div className="flex justify-between items-center px-5 md:px-10 pt-5">
-                            <h1 className="text-2xl font-semibold text-[#080a0b]">
+                            <h1 className="text-2xl font-semibold text-[#080a0b] dark:text-white">
                                 {headerText}
                             </h1>
                             <div className="p-1 rounded-md active:ring-2 active:ring-gray-700 hover:bg-gray-300 transition-colors duration-200 inline-flex cursor-pointer">
@@ -112,7 +112,7 @@ const DrawerModal: React.ForwardRefRenderFunction<ModalHandle, Props> = (
                 <div className="sticky left-0 bottom-0 border-t w-[calc(100%+40px)] md:w-[calc(100%+80px)] -mx-5 md:-mx-10 px-5 md:px-10 py-4 flex justify-end space-x-5 bg-white dark:bg-ebayDark">
                     <button
                         onClick={closeModal}
-                        className="outline-none px-5 font-medium border-2 border-[#080a0b] py-2 rounded-md text-[#080a0b] bg-transparent hover:bg-[#080a0b] hover:text-[#caa969] transition-colors duration-200"
+                        className="outline-none px-5 font-medium border-2 border-[#080a0b] dark:border-[#caa969] py-2 rounded-md text-[#080a0b] bg-transparent hover:bg-[#080a0b] hover:text-[#caa969] transition-colors duration-200 dark:hover:text-[#caa969] dark:text-white"
                     >
                         Cancel
                     </button>
