@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     <meta property="og:type" content="website" />
                     <meta
                         property="og:url"
-                        content="https://nk-marketplace.vercel.app/"
+                        content="https://namka-marketplace.netlify.app/"
                     />
                     <meta
                         property="og:title"
@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     />
                     <meta
                         property="og:image"
-                        content="https://ebay-clone-challenge.vercel.app/assets/site_preview.jpg"
+                        content="https://namka-marketplace.netlify.app/assets/site_preview.jpg"
                     />
                     <meta
                         property="og:updated_time"
@@ -51,7 +51,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     />
                     <meta
                         property="twitter:url"
-                        content="https://nk-marketplace.vercel.app/"
+                        content="https://namka-marketplace.netlify.app/"
                     />
                     <meta
                         property="twitter:title"
@@ -63,7 +63,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     />
                     <meta
                         property="twitter:image"
-                        content="https://ebay-clone-challenge.vercel.app/assets/site_preview.png"
+                        content="https://namka-marketplace.netlify.app/assets/site_preview.png"
                     />
                 </Head>
                 <Component {...pageProps} />
