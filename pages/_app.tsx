@@ -14,8 +14,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <ThirdwebProvider desiredChainId={network}>
             <ThemeProvider enableSystem={true} attribute="class">
                 <Head>
-                    {/* <title>Alien Peace Marketplace</title>
-                    <link rel="icon" href="/nk_icon.png" /> */}
 
                     <title>NAMKA Web3 Marketplace</title>
                     <meta name="title" content="NAMKA Web3 Marketplace" />
@@ -64,6 +62,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     <meta
                         property="twitter:image"
                         content="https://namka-marketplace.netlify.app/assets/site_preview.png"
+                        
                     />
                 </Head>
                 <Component {...pageProps} />

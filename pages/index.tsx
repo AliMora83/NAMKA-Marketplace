@@ -9,7 +9,6 @@ import useListItem from "../utils/hooks/useListItem";
 
 const Home: NextPage = () => {
     const { listings, loadingListings } = useListItem();
-    console.log(listings)
 
     return (
         <>
