@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
     return (
         <>
-            <div className="to-pink-500[0.35] dark:to-pink-500[0.25] bg-gradient-to-tr from-purple-500/[0.35] dark:from-purple-500/[0.15] min-h-screen pb-20 md:pb-10">
+            <div className="to-gray-500[0.35] dark:to-gray-500[0.25] bg-gradient-to-tr from-gray-500/[0.35] dark:from-purple-500/[0.15] min-h-screen pb-20 md:pb-10">
                 <Header />
 
                 <main className="max-w-6xl mx-auto p-2">
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
                                             </div>
 
                                             <div className="pt-2 space-y-4">
-                                                <h2 className="text-lg truncate text-pink-500 font-bold">
+                                                <h2 className="text-lg truncate text-gray-500 font-bold">
                                                     {listing.asset.name}
                                                 </h2>
                                                 <hr />
@@ -54,14 +54,14 @@ const Home: NextPage = () => {
                                             </div>
 
                                             <p className="flex items-center space-x-1">
-                                                <span className="font-bold text-black dark:text-white">
+                                                <span className="font-md text-black dark:text-white text-sm">
                                                     {
                                                         listing
                                                             .buyoutCurrencyValuePerToken
                                                             .displayValue
                                                     }
                                                 </span>
-                                                <span className="text-pink-500 font-medium">
+                                                <span className="text-gray-600 text-sm">
                                                     {
                                                         listing
                                                             .buyoutCurrencyValuePerToken
@@ -75,8 +75,8 @@ const Home: NextPage = () => {
                                                     "flex space-x-1 items-center justify-end text-xs w-fit ml-auto p-2 rounded-lg text-white",
                                                     listing.type ===
                                                     ListingType.Direct
-                                                        ? "bg-pink-500"
-                                                        : "bg-orange-600",
+                                                        ? "bg-[#2c2b2b]"
+                                                        : "bg-[#caa969]",
                                                 ].join(" ")}
                                             >
                                                 <p>

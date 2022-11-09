@@ -41,7 +41,7 @@ function ListItem({
                 Below you will find the Nft's you own in your wallet
             </p>
 
-            <div className="p-5 py-8 overflow-x-auto scrollbar-thin scrollbar-thumb-pink-600 scrollbar-track-pink-100">
+            <div className="p-5 py-8 overflow-x-auto scrollbar-thin scrollbar-thumb-[#e0aa53] scrollbar-track-[#2c2b2b]">
                 <div className="flex items-center space-x-6">
                     {isLoadingNft ? (
                         <>
@@ -81,10 +81,10 @@ function ListItem({
                                             className="h-36 rounded-lg"
                                             src={nft.metadata.image}
                                         />
-                                        <p className="truncate text-lg font-bold text-pink-500">
+                                        <p className="truncate pt-2 text-base font-md text-[#e0aa53]">
                                             {nft.metadata.name}
                                         </p>
-                                        <p className="truncate text-xs text-black dark-text-white">
+                                        <p className="truncate text-xs text-gray-400 dark-text-white">
                                             {nft.metadata.description}
                                         </p>
                                     </div>

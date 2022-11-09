@@ -22,6 +22,10 @@
     .neonBtn {
         @apply relative flex items-center justify-center space-x-4 divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none text-black transition duration-200 hover:text-purple-500 dark:bg-black dark:text-white dark:hover:text-purple-300;
     }
+
+    .h-btn {
+        @apply inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-[#080a0b] rounded-lg border border-[#080a0b] outline-none dark:bg-[#caa969] justify-center space-x-2 dark:hover:text-[#080a0b] hover:text-[#caa969]
+    }
 }
 
 /* react-modal */

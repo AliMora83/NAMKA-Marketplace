@@ -259,7 +259,7 @@ function ListingPage({}: Props) {
     };
 
     return (
-        <div className="to-pink-500[0.35] dark:to-pink-500[0.25] bg-gradient-to-tr from-purple-500/[0.35] dark:from-purple-500/[0.15] min-h-screen pb-20 md:pb-10">
+        <div className="to-gary-100[0.35] dark:to-gray-300[0.25] bg-gradient-to-tr from-gray-300/[0.35] dark:from-purple-500/[0.15] min-h-screen pb-20 md:pb-10">
             <Header />
 
             {isLoading && (
@@ -268,7 +268,7 @@ function ListingPage({}: Props) {
                         size={80}
                         lineWeight={5}
                         speed={1.4}
-                        color={theme === "dark" ? "#fff" : "rgb(236 72 153)"}
+                        color={theme === "dark" ? "#fff" : "#caa969"}
                     />
                 </div>
             )}
@@ -279,26 +279,29 @@ function ListingPage({}: Props) {
                 <main className="max-w-6xl mx-auto p-2 flex flex-col lg:flex-row space-y-10 space-x-5 pr-10">
                     <div className="p-10 mx-auto lg:mx-0 max-w-md xl:max-w-6xl">
                         <ListingCard noHover>
-                            <div className="-m-5 cursor-default rounded-lg overflow-hidden ring-8 ring-pink-500 group-hover:rotate-1 transition-transform duration-200 ease-out">
-                                <MediaRenderer src={listing.asset.image} />
+                            <div className="cursor-default overflow-hidden  group-hover:rotate-1 transition-transform duration-200 ease-out p-10 rounded-lg border border-[#caa969] mx-auto lg:mx-0 max-w-md lg:max-w-md">
+                                <MediaRenderer className='rounded-lg' src={listing.asset.image} />
                             </div>
                         </ListingCard>
                     </div>
 
                     <section className="flex-1 space-y-5">
                         <div className="">
-                            <h1 className="text-xl font-bold">
+                            <h1 className="text-lg font-bold">
                                 {listing.asset.name}
                             </h1>
-                            <p className="text-gray-600 dark:text-gray-200">
+                            <p className="text-gray-600 dark:text-gray-200 text-sm w-2/3 pt-2">
                                 {listing.asset.description}
                             </p>
-                            <p className="flex items-center text-xs sm:text-base space-x-1">
+                            <p className="flex items-center text-xs pt-2 sm:text-base text-gray-500">
                                 <UserCircleIcon className="h-5" />
                                 <span className="font-bold pr-1">Seller </span>
-                                {listing.sellerAddress}
+                                {listing.sellerAddress.slice(0, 4) + '...' + 
+                                listing.sellerAddress.slice(-4)}
+                            
                             </p>
                         </div>
+                        <hr className='px-5 border-[#caa969]'/>
 
                         <div className="grid grid-cols-2 items-center py-2">
                             <p className="font-bold">Listing Type:</p>
@@ -309,7 +312,7 @@ function ListingPage({}: Props) {
                             </p>
 
                             <p className="font-bold">Buy it Now Price:</p>
-                            <p className="text-4xl font-bold">
+                            <p className="text-xl font-bold">
                                 {
                                     listing.buyoutCurrencyValuePerToken
                                         .displayValue
@@ -328,8 +331,8 @@ function ListingPage({}: Props) {
                                     isBuying || isMakingOffer || isMakingBid
                                 }
                             >
-                                <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 opacity-30 blur transition duration-1000 group-hover:opacity-100 w-44"></div>
-                                <div className="neonBtn bg-pink-500 dark:bg-pink-500 py-4 px-10 w-44 rounded-full text-white hover:text-white">
+                                <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-md bg-gradient-to-r from-gray-600 to-gray-500 opacity-30 blur transition duration-500 group-hover:opacity-70 w-44"></div>
+                                <div className="neonBtn bg-[#080a0b] dark:text-white dark:bg-[#caa969] py-4 px-10 w-44 rounded-md text-white hover:text-[#caa969] dark:hover:text-[#080a0b]">
                                     {isBuying ||
                                     isMakingOffer ||
                                     isMakingBid ? (
@@ -345,6 +348,7 @@ function ListingPage({}: Props) {
                                 </div>
                             </button>
                         </div>
+                        <hr className='px-5 border-[#caa969]'/>
 
                         {/* TODO: If DIRECT, show offers here... */}
                         {listing.type === ListingType.Direct && offers && (
@@ -394,7 +398,6 @@ function ListingPage({}: Props) {
                         )}
 
                         <div className="grid grid-cols-2 space-y-2 items-center justify-end">
-                            <hr className="col-span-2" />
 
                             <p className="col-span-2 font-bold">
                                 {listing.type === ListingType.Direct
@@ -435,8 +438,8 @@ function ListingPage({}: Props) {
                                     isBuying || isMakingOffer || isMakingBid
                                 }
                             >
-                                <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 opacity-30 blur transition duration-1000 group-hover:opacity-100 w-44"></div>
-                                <div className="neonBtn bg-orange-500 dark:bg-orange-500 py-4 px-10 w-44 rounded-full text-white hover:text-white">
+                                <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-md bg-gradient-to-r from-gray-600 to-gary-500 opacity-20 blur transition duration-1000 group-hover:opacity-70 w-44"></div>
+                                <div className="neonBtn bg-[#080a0b] dark:text-white dark:bg-[#caa969] py-4 px-10 w-44 rounded-md text-white hover:text-[#caa969] dark:hover:text-[#080a0b]">
                                     {isBuying ||
                                     isMakingOffer ||
                                     isMakingBid ? (

@@ -64,7 +64,7 @@ function Header({}: Props) {
                     <div className="flex items-center space-x-2 text-sm">
                         <ButtonNeon>
                             <ConnectWallet
-                                className="relative flex items-center space-x-4 divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none text-black transition duration-200 hover:text-purple-500 dark:bg-black dark:text-white dark:hover:text-purple-300"
+                                className="relative flex items-center space-x-4 divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none text-black transition duration-200 hover:text-[#e0aa53] dark:bg-black dark:text-white dark:hover:text-[#e0aa53]"
                                 colorMode={theme as ColorMode | undefined}
                             />
                         </ButtonNeon>
@@ -84,8 +84,8 @@ function Header({}: Props) {
                             onClick={() => openAddInventory()}
                             className="group relative cursor-pointer"
                         >
-                            <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-purple-600 to-pink-500 opacity-30 blur transition duration-1000 group-hover:opacity-100"></div>
-                            <div className="relative flex items-center divide-gray-600 rounded-lg bg-white px-4 py-4 leading-none text-black transition duration-200 hover:text-purple-500 dark:bg-black dark:text-white dark:hover:text-purple-300 justify-center">
+                            <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-[#2c2b2b] to-[#2c2b2b] dark:bg-gradient-to-r dark:from-[#855d0c] dark:to-[#e0aa53] opacity-20 blur transition duration-1000 group-hover:opacity-60"></div>
+                            <div className="relative flex items-center divide-gray-600 rounded-lg bg-white px-4 py-4 leading-none text-black transition duration-200 hover:text-[#e0aa53] dark:bg-black dark:text-white dark:hover:text-[#e0aa53] justify-center">
                                 <span className="hidden md:mr-4 md:inline-flex">
                                     Add to Inventory
                                 </span>
@@ -143,7 +143,7 @@ function Header({}: Props) {
                             <input
                                 type="text"
                                 id="voice-search"
-                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-pink-500 dark:focus:border-pink-500"
+                                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e0aa53] focus:border-[#e0aa53] block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:[#e0aa53] dark:focus:border-[#e0aa53]"
                                 placeholder="Search Anything..."
                                 required
                             />
@@ -169,7 +169,7 @@ function Header({}: Props) {
 
                         <button
                             type="submit"
-                            className="inline-flex items-center py-2.5 px-3 ml-2 text-sm font-medium text-white bg-pink-500 rounded-lg border border-pink-500 outline-none dark:bg-pink-500 justify-center space-x-2"
+                            className="h-btn"
                         >
                             <svg
                                 aria-hidden="true"
@@ -197,7 +197,7 @@ function Header({}: Props) {
                             if (!address) return toast.error("Connect Wallet");
                             openListItem();
                         }}
-                        className="inline-flex bg-transparent text-pink-500 px-5 md:px-5 py-2 border-2 border-pink-500 hover:bg-pink-500 hover:text-white transition-colors duration-200 rounded-lg"
+                        className="inline-flex bg-transparent text-[#080a0b] dark:text-[#caa969] hover:bg-[#080a0b] hover:text-[#caa969] px-5 md:px-5 py-2 border-2 border-[#080a0b] dark:border-[#caa969] dark:hover:bg-[#caa969] dark:hover:text-[#080a0b] transition-colors duration-200 rounded-lg"
                     >
                         List Item
                     </button>
