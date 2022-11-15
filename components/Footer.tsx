@@ -9,10 +9,11 @@ function Footer({}: Props) {
     <div>
          <footer className='flex flex-col items-center text-white justify-between pb-5 pt-10
           absolute bottom-0 left-0 right-0 space-y-3'>
-      <Image className='rounded-full h-6 w-6'
-         src={nk_icon} alt="icon" />
-      <p className='text-xs px-10 text-gray-500 text-center'>
-        Web3 Development by Ali Mora | NAMKA Marketplace build on Web3</p>
+          <a href="https://alimora-portfolio.vercel.app/">
+            <Image className='rounded-full h-6 w-6 hover:scale-110 ease-in-out duration-150'
+              src={nk_icon} alt="icon" /></a>
+            <p className='text-xs px-10 text-gray-500 text-center'>
+              Web3 Development by <span className='font-bold'><a href='https://alimora-portfolio.vercel.app/' target='_black'>Ali Mora</a></span> | NAMKA Marketplace build on Web3</p>
     </footer>
     </div>
   )

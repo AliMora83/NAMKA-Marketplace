@@ -69,7 +69,9 @@ function Header({}: Props) {
                             />
                         </ButtonNeon>
 
-                        <p className="headerLink">Help & Contact</p>
+                        <p className="headerLink">
+                        <span className='hover:font-bold m-2 ease-in-out duration-200'><a href='https://alimora-portfolio.vercel.app/' target='_black'>Help & Contact</a></span>
+                            </p>
                     </div>
 
                     <ThemeToggler />
