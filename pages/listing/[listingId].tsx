@@ -259,7 +259,7 @@ function ListingPage({}: Props) {
     };
 
     return (
-        <div className="to-gary-100[0.35] dark:to-gray-300[0.25] bg-gradient-to-tr from-gray-300/[0.35] dark:from-purple-500/[0.15] min-h-screen pb-20 md:pb-10">
+        <div className="to-gary-100[0.35] dark:to-gray-300[0.25] bg-gradient-to-tr from-gray-300/[0.35] dark:from-purple-500/[0.15] min-h-screen pb-10 md:pb-10">
             <Header />
 
             {isLoading && (
@@ -276,7 +276,7 @@ function ListingPage({}: Props) {
             {!listing && !isLoading && <h1 className="">Listing not fount</h1>}
 
             {!isLoading && listing && (
-                <main className="max-w-6xl mx-auto p-2 flex flex-col lg:flex-row space-y-10 space-x-5 pr-10">
+                <main className="max-w-6xl mx-auto p-2 flex flex-col lg:flex-row space-y-10 space-x-5 pr-10 my-3">
                     <div className="p-10 mx-auto lg:mx-0 max-w-md xl:max-w-6xl">
                         <ListingCard noHover>
                             <div className="cursor-default overflow-hidden  group-hover:rotate-1 transition-transform duration-200 ease-out p-10 rounded-lg border border-[#caa969] mx-auto lg:mx-0 max-w-md lg:max-w-md">

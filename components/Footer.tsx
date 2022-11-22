@@ -8,7 +8,7 @@ function Footer({}: Props) {
   return (
     <div>
          <footer className='flex flex-col items-center text-white justify-between pb-5 pt-10
-          absolute bottom-0 left-0 right-0 space-y-3'>
+          absolute mb-auto left-0 right-0 space-y-3 bg-black mt-5'>
           <a href="https://alimora-portfolio.vercel.app/">
             <Image className='rounded-full h-6 w-6 hover:scale-110 ease-in-out duration-150'
               src={nk_icon} alt="icon" /></a>

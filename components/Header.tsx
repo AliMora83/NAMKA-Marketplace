@@ -77,13 +77,24 @@ function Header({}: Props) {
                     <ThemeToggler />
 
                     <div className="flex items-center space-x-4 text-sm">
-                        <p className="headerLink">Sell</p>
-                        <p className="headerLink">Watchlist</p>
+                        {/* <p className="headerLink">About</p> */}
+
+                        <div
+                            // onClick={() => openAbout()}
+                            className="group relative cursor-pointer">
+                                
+                            <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-[#2c2b2b] to-[#2c2b2b] dark:bg-gradient-to-r dark:from-[#855d0c] dark:to-[#e0aa53] opacity-20 blur transition duration-1000 group-hover:opacity-60"></div>
+                            <div className="relative flex items-center divide-gray-600 rounded-lg bg-white px-4 py-4 leading-none text-black transition duration-200 hover:text-[#e0aa53] dark:bg-black dark:text-white dark:hover:text-[#e0aa53] justify-center">
+                                <span className="hidden md:inline-flex">
+                                    About
+                                </span>
+                            </div>
+                        </div>
 
                         <div
                             onClick={() => openAddInventory()}
-                            className="group relative cursor-pointer"
-                        >
+                            className="group relative cursor-pointer">
+
                             <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-[#2c2b2b] to-[#2c2b2b] dark:bg-gradient-to-r dark:from-[#855d0c] dark:to-[#e0aa53] opacity-20 blur transition duration-1000 group-hover:opacity-60"></div>
                             <div className="relative flex items-center divide-gray-600 rounded-lg bg-white px-4 py-4 leading-none text-black transition duration-200 hover:text-[#e0aa53] dark:bg-black dark:text-white dark:hover:text-[#e0aa53] justify-center">
                                 <span className="hidden md:mr-4 md:inline-flex">

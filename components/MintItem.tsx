@@ -54,7 +54,7 @@ function MintItem({
                     </div>
                     <button
                         type="button"
-                        className="bg-white border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="bg-white border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#e0aa53]"
                     >
                         <label
                             htmlFor="image"
@@ -87,7 +87,7 @@ function MintItem({
                         id="name"
                         name="name"
                         onChange={(e) => setName(e.target.value)}
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-pink-500 focus:border-pink-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-pink-500 dark:focus:border-pink-500"
+                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e0aa53] focus:border-[#e0aa53] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#e0aa53] dark:focus:border-[#e0aa53]"
                         placeholder="Name of your item..."
                         value={name}
                         required

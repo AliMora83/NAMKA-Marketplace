@@ -11,6 +11,7 @@ function useMint() {
     const [description, setDescription] = React.useState<string>("");
     const [isMinting, setIsMinting] = React.useState<boolean>(false);
 
+    const aboutModalRef = React.useRef<ModalHandle>(null);
     const inventoryModalRef = React.useRef<ModalHandle>(null);
     const connectModalRef = React.useRef<ModalHandle>(null);
 
