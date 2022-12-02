@@ -60,7 +60,7 @@ function Header({}: Props) {
     return (
         <>
             <div className="max-w-6xl mx-auto p-2">
-                <nav className="flex justify-between items-center">
+                <nav className="flex justify-between items-center relative">
                     <div className="flex items-center space-x-2 text-sm">
                         <ButtonNeon>
                             <ConnectWallet
@@ -70,26 +70,19 @@ function Header({}: Props) {
                         </ButtonNeon>
 
                         <p className="headerLink">
-                        <span className='hover:font-bold m-2 ease-in-out duration-200'><a href='https://alimora-portfolio.vercel.app/' target='_black'>Help & Contact</a></span>
+                        <span className='hover:font-bold m-2 ease-in-out duration-200'><a href='https://mumbaifaucet.com/' target='_blank'>Get Free Matic</a></span>
                             </p>
+                   
                     </div>
-
-                    <ThemeToggler />
-
+                    <section className="static top-5 object-center">
+                        <ThemeToggler />
+                    </section>
                     <div className="flex items-center space-x-4 text-sm">
                         {/* <p className="headerLink">About</p> */}
 
-                        <div
-                            // onClick={() => openAbout()}
-                            className="group relative cursor-pointer">
-                                
-                            <div className="animate-tilt group-hover:duration-600 absolute -inset-0.5 rounded-lg bg-gradient-to-r from-[#2c2b2b] to-[#2c2b2b] dark:bg-gradient-to-r dark:from-[#855d0c] dark:to-[#e0aa53] opacity-20 blur transition duration-1000 group-hover:opacity-60"></div>
-                            <div className="relative flex items-center divide-gray-600 rounded-lg bg-white px-4 py-4 leading-none text-black transition duration-200 hover:text-[#e0aa53] dark:bg-black dark:text-white dark:hover:text-[#e0aa53] justify-center">
-                                <span className="hidden md:inline-flex">
-                                    About
-                                </span>
-                            </div>
-                        </div>
+                            <p className="headerLink">
+                        <span className='hover:font-bold m-2 ease-in-out duration-200'><a href='https://alimora-portfolio.vercel.app/' target='_blank'>About</a></span>
+                            </p>
 
                         <div
                             onClick={() => openAddInventory()}
