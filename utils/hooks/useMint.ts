@@ -54,7 +54,7 @@ function useMint() {
 
         // Toasts
         if (!image) return toast.error("Please upload an image");
-        if (!name) return toast.error("Please enter a name");
+        if (!name) return toast.error("Please enter a address");
         if (!description) return toast.error("Please enter a description");
         if (!typeOfProperty) return toast.error("Please enter a type of property");
         if (!bedrooms) return toast.error("Please enter number of bedrooms");
