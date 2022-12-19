@@ -9,6 +9,11 @@ function useMint() {
     const [image, setImage] = React.useState<File | null>(null);
     const [name, setName] = React.useState<string>("");
     const [description, setDescription] = React.useState<string>("");
+    const [typeOfProperty, setTypeOfProperty] = React.useState<string>("");
+    const [bedrooms, setBedrooms] = React.useState<string>("");
+    const [bathrooms, setBathrooms] = React.useState<string>("");
+    const [squareFeet, setSquareFeet] = React.useState<string>("");
+
     const [isMinting, setIsMinting] = React.useState<boolean>(false);
 
     const aboutModalRef = React.useRef<ModalHandle>(null);
@@ -51,13 +56,21 @@ function useMint() {
         if (!image) return toast.error("Please upload an image");
         if (!name) return toast.error("Please enter a name");
         if (!description) return toast.error("Please enter a description");
+        if (!typeOfProperty) return toast.error("Please enter a type of property");
+        if (!bedrooms) return toast.error("Please enter number of bedrooms");
+        if (!bathrooms) return toast.error("Please enter number of bathrooms");
+        if (!squareFeet) return toast.error("Please enter property size");
 
         toast.loading("Minting NFT...");
         setIsMinting(true);
 
         const metadata = {
             name,
-            description,
+            description, 
+            typeOfProperty,
+            bedrooms,
+            bathrooms,
+            squareFeet,
             image: image,
         };
 
@@ -87,6 +100,14 @@ function useMint() {
         setName,
         description,
         setDescription,
+        typeOfProperty,
+        setTypeOfProperty,
+        bedrooms,
+        setBedrooms,
+        bathrooms,
+        setBathrooms,
+        squareFeet,
+        setSquareFeet,
         image,
         setImage,
         isMinting,

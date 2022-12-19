@@ -33,10 +33,10 @@ function About({}: Props) {
                 </div>
                 <div>
                     <label
-                        htmlFor="description"
+                        htmlFor="about"
                         className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                        Description
+                        About page here
                     </label>
                     
                 </div>

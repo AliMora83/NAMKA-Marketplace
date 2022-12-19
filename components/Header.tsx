@@ -40,6 +40,14 @@ function Header({}: Props) {
     setImage,
     description,
     setDescription,
+    typeOfProperty,
+    setTypeOfProperty,
+    bedrooms,
+    setBedrooms,
+    bathrooms,
+    setBathrooms,
+    squareFeet,
+    setSquareFeet,
     isMinting,
     openAddInventory,
     closeConnectModal,
@@ -241,6 +249,14 @@ function Header({}: Props) {
           setName={setName}
           description={description}
           setDescription={setDescription}
+          typeOfProperty={typeOfProperty}
+          setTypeOfProperty={setTypeOfProperty}
+          bedrooms={bedrooms}
+          setBedrooms={setBedrooms}
+          bathrooms={bathrooms}
+          setBathrooms={setBathrooms}
+          squareFeet={squareFeet}
+          setSquareFeet={setSquareFeet}
         />
       </DrawerModal>
 

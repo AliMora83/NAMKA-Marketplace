@@ -13,8 +13,14 @@ type Props = {
   setDescription: (description: string) => void;
   typeOfProperty: string;
   setTypeOfProperty: (
-    description: string
+    typeOfProperty: string
   ) => void;
+  bedrooms: string;
+  setBedrooms: (bedrooms: string) => void;
+  bathrooms: string;
+  setBathrooms: (bathrooms: string) => void;
+  squareFeet: string;
+  setSquareFeet: (squareFeet: string) => void;
 };
 
 function MintItem({
@@ -26,6 +32,12 @@ function MintItem({
   setDescription,
   typeOfProperty,
   setTypeOfProperty,
+  bedrooms,
+  setBedrooms,
+  bathrooms,
+  setBathrooms,
+  squareFeet,
+  setSquareFeet,
 }: Props) {
   const [imageUrl, setImageUrl] = React.useState<
     string | null
@@ -92,18 +104,18 @@ function MintItem({
           />
         </div>
 
-        {/* Name */}
+        {/* Address */}
         <div>
           <label
-            htmlFor="name"
+            htmlFor="address"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
           >
             Address of Property
           </label>
           <input
             type="text"
-            id="name"
-            name="name"
+            id="address"
+            name="address"
             onChange={(e) =>
               setName(e.target.value)
             }
@@ -139,14 +151,14 @@ function MintItem({
               htmlFor="typeOfProperty"
               className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
             >
-              Type of Property
+              Property Type
             </label>
             <input
               type="text"
               id="typeOfProperty"
               name="typeOfProperty"
               onChange={(e) =>
-                setDescription(e.target.value)
+                setTypeOfProperty(e.target.value)
               }
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e0aa53] focus:border-[#e0aa53] inline w-40 p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#e0aa53] dark:focus:border-[#e0aa53]"
               placeholder="Single family home"
@@ -166,11 +178,11 @@ function MintItem({
               id="bedrooms"
               name="bedrooms"
               onChange={(e) =>
-                setDescription(e.target.value)
+                setBedrooms(e.target.value)
               }
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e0aa53] focus:border-[#e0aa53] inline w-36 p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#e0aa53] dark:focus:border-[#e0aa53]"
               placeholder="eg. 4"
-              value={name}
+              value={bedrooms}
               required
             />
           </div>
@@ -186,11 +198,11 @@ function MintItem({
               id="bathrooms"
               name="bathrooms"
               onChange={(e) =>
-                setDescription(e.target.value)
+                setBathrooms(e.target.value)
               }
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e0aa53] focus:border-[#e0aa53] inline w-36 p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#e0aa53] dark:focus:border-[#e0aa53]"
               placeholder="eg. 3"
-              value={description}
+              value={bathrooms}
               required
             />
           </div>
@@ -206,18 +218,18 @@ function MintItem({
               id="squareFeet"
               name="squareFeet"
               onChange={(e) =>
-                setDescription(e.target.value)
+                setSquareFeet(e.target.value)
               }
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#e0aa53] focus:border-[#e0aa53] inline w-36 p-2.5 dark:bg-gray-700 dark:border-[#080a0b] dark:placeholder-gray-400 dark:text-white dark:focus:ring-[#e0aa53] dark:focus:border-[#e0aa53]"
               placeholder="eg. 2200"
-              value={description}
+              value={squareFeet}
               required
             />
           </div>
         </div>
       </form>
 
-      <p className="text-xs flex space-x-1 items-center w-3/5 text-[#e0aa53]">
+      <p className="text-xs flex space-x-1 items-center w-3/5 text-gray-400">
         <InformationCircleIcon
           cursor={"pointer"}
           title="By adding your property here, you're
